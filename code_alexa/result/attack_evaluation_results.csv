@@ -1,0 +1,6 @@
+Attack,Accuracy,SD,Norm SD
+LL-Jaccard,17.1%,0.172,41.15
+LL-NB,26.6%,0.268,35.59
+VNG++,24.9%,0.252,35.79
+P-SVM (AdaBoost),3.7%,0.030,49.07
+Random Guess,1.0%,N/A,49.5

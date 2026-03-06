@@ -1,0 +1,24 @@
+VOICE COMMAND FINGERPRINTING ATTACK EVALUATION RESULTS
+==========================================================================================
+
+          Attack Accuracy    SD Norm SD
+      LL-Jaccard    17.1% 0.172   41.15
+           LL-NB    26.6% 0.268   35.59
+           VNG++    24.9% 0.252   35.79
+P-SVM (AdaBoost)     3.7% 0.030   49.07
+    Random Guess     1.0%   N/A    49.5
+
+Number of voice commands (classes): 100
+Based on 5-fold cross-validation
+Doc2Vec Model: Quora (E:\Research work\wenggang\paper\code_alexa\doc2vec_model\quora_models\quora_e100_v300.bin)
+
+Attack Algorithms:
+- LL-Jaccard: Jaccard similarity on packet sets
+- LL-NB: Naive Bayes on packet histogram features
+- VNG++: Variable n-gram bursts with Naive Bayes
+- P-SVM (AdaBoost): AdaBoost classifier on traffic features
+
+Metrics:
+- Accuracy: Percentage of correct predictions
+- SD (Semantic Distance): Cosine similarity between predicted and actual command vectors
+- Norm SD (Normalized SD): Rank of actual command in similarity-sorted results (0=perfect)

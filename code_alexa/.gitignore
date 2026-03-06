@@ -1,0 +1,36 @@
+# Large model files and datasets (but keep Python source files)
+doc2vec_model/quora_models/
+doc2vec_model/yahoo_models/
+doc2vec_model/toy_data/
+doc2vec_model/vector_csv/
+data/
+
+# Results and logs
+temp_files/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+ENV/
