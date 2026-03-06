@@ -61,6 +61,10 @@ Comprehensive evaluation conducted in `evaluate_attacks.py`:
 - Semantic distance metrics using trained Doc2Vec models
 - Trade-off analysis between attack success rate and defense overhead
 
+## Important Note
+
+**Result Differences from Original Paper**: The paper datasets used in the original research were not available for calculating semantic distance in this reproduction. Consequently, the semantic distance metrics in this implementation may differ from those reported in the original paper. The classification accuracy results should be compared with caution, as they may be influenced by different Doc2Vec models and semantic similarity calculations.
+
 ## Project Structure
 
 ```
@@ -182,6 +186,8 @@ Edit `config.py` to customize:
 - Doc2Vec parameters (epoch, vector size) impact semantic similarity metrics
 - BuFLO defense effectively protects against fingerprinting with quantifiable overhead
 - Rounding parameter significantly affects attack performance
+
+
 
 
 
